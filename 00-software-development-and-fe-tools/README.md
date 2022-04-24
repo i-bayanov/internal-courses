@@ -1,11 +1,11 @@
 # Software development and FE tools
-  1. [Software development](https://github.com/i-bayanov/internal-courses/edit/master/README.md#software-development)  
-    - [Software Development Life Cycle](https://github.com/i-bayanov/internal-courses/edit/master/README.md#software-development-life-cycle)  
-    - [Software Development Methodologies](https://github.com/i-bayanov/internal-courses/edit/master/README.md#software-development-methodologies)  
-  2. [FE tools](https://github.com/i-bayanov/internal-courses/edit/master/README.md#fe-tools)  
-    - [IDE](https://github.com/i-bayanov/internal-courses/edit/master/README.md#ide)  
-    - [Git](https://github.com/i-bayanov/internal-courses/edit/master/README.md#git)  
-    - [NPM](https://github.com/i-bayanov/internal-courses/edit/master/README.md#npm)
+  1. [Software development](https://github.com/i-bayanov/internal-courses/tree/master/00-software-development-and-fe-tools#software-development)  
+    - [Software Development Life Cycle](https://github.com/i-bayanov/internal-courses/tree/master/00-software-development-and-fe-tools#software-development-life-cycle)  
+    - [Software Development Methodologies](https://github.com/i-bayanov/internal-courses/tree/master/00-software-development-and-fe-tools#software-development-methodologies)  
+  2. [FE tools](https://github.com/i-bayanov/internal-courses/tree/master/00-software-development-and-fe-tools#fe-tools)  
+    - [IDE](https://github.com/i-bayanov/internal-courses/tree/master/00-software-development-and-fe-tools#ide)  
+    - [Git](https://github.com/i-bayanov/internal-courses/tree/master/00-software-development-and-fe-tools#git)  
+    - [NPM](https://github.com/i-bayanov/internal-courses/tree/master/00-software-development-and-fe-tools#npm)
 
 ## Software development
 ### Software Development Life Cycle

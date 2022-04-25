@@ -1,0 +1,25 @@
+{
+  "name": "01-code-quality",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "lint": "npx eslint *.js",
+    "lint-fix": "npx eslint *.js --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/i-bayanov/internal-courses.git"
+  },
+  "author": "Ilia Bayanov",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "^8.2.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.25.2",
+    "prettier": "^2.4.1"
+  }
+}

@@ -5,7 +5,8 @@
   2. [FE tools](https://github.com/i-bayanov/internal-courses/tree/master/00-software-development-and-fe-tools#fe-tools)  
     - [IDE](https://github.com/i-bayanov/internal-courses/tree/master/00-software-development-and-fe-tools#ide)  
     - [Git](https://github.com/i-bayanov/internal-courses/tree/master/00-software-development-and-fe-tools#git)  
-    - [NPM](https://github.com/i-bayanov/internal-courses/tree/master/00-software-development-and-fe-tools#npm)
+    - [NPM](https://github.com/i-bayanov/internal-courses/tree/master/00-software-development-and-fe-tools#npm)  
+    - [Инструменты разработчика](https://github.com/i-bayanov/internal-courses/tree/master/00-software-development-and-fe-tools#%D0%B8%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B-%D1%80%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%87%D0%B8%D0%BA%D0%B0-%D0%B2-%D0%B1%D1%80%D0%B0%D1%83%D0%B7%D0%B5%D1%80%D0%B5)
 
 ## Software development
 ### Software Development Life Cycle
@@ -123,4 +124,14 @@
 [Глобальные модули](https://learn.javascript.ru/screencast/nodejs#nodejs-npm-global)  
 [Семантическое Версионирование 2.0.0](https://semver.org/lang/ru/)  
 [These NPM tricks will make you a pro](https://www.freecodecamp.org/news/10-npm-tricks-that-will-make-you-a-pro-a945982afb25/)  
-[What to ask yourself before adding an NPM package to your project](https://www.freecodecamp.org/news/what-to-ask-yourself-before-adding-an-npm-package-to-your-project-6b92ba13070d/)
+[What to ask yourself before adding an NPM package to your project](https://www.freecodecamp.org/news/what-to-ask-yourself-before-adding-an-npm-package-to-your-project-6b92ba13070d/)  
+
+### Инструменты разработчика в браузере
+
+Какие-нибудь задания на использование инструментов разработчика в браузере
+
+Материалы:  
+[Консоль разработчика](https://learn.javascript.ru/devtools)  
+[Отладка в браузере](https://learn.javascript.ru/debugging-chrome)  
+[Chrome DevTools](https://developer.chrome.com/docs/devtools/)  
+[Dev Tips](https://umaar.com/dev-tips/)

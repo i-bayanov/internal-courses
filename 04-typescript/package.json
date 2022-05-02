@@ -1,0 +1,29 @@
+{
+  "name": "04-typescript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "npx eslint *.js",
+    "lint-fix": "npx eslint *.js --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/i-bayanov/internal-courses.git"
+  },
+  "author": "Ilia Bayanov",
+  "license": "ISC",
+  "devDependencies": {
+    "@tsconfig/node14": "^1.0.1",
+    "@typescript-eslint/eslint-plugin": "^5.4.0",
+    "@typescript-eslint/parser": "^5.4.0",
+    "eslint": "^8.3.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.25.3",
+    "ts-loader": "^9.2.6",
+    "typescript": "^4.5.2",
+    "webpack": "^5.64.3",
+    "webpack-cli": "^4.9.1"
+  }
+}

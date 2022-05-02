@@ -1,0 +1,120 @@
+.main {
+  display: flex;
+  flex-shrink: 2;
+  height: 100%;
+  width: 100%;
+  background: #0079bf;
+  align-items: flex-start;
+  justify-content: space-between;
+  overflow-x: auto;
+  padding: 20px 10px;
+}
+
+.corrector {
+  height: 100%;
+  width: 10px;
+  flex-shrink: 0;
+}
+
+.taskList, .prevTasksList, .prevTasksListUp {
+  position: relative;
+  display: flex;
+  flex-flow: column nowrap;
+  width: 282px;
+  max-height: 100%;
+  border-radius: 10px;
+  background: #EBECF0;
+  flex-shrink: 0;
+  margin: 0px 10px;
+  padding: 12px;
+}
+
+.newTaskInput {
+  display: block;
+  width: calc(100% - 7px);
+}
+
+.prevTasksList, .prevTasksListUp {
+  position: absolute;
+  left: -5px;
+  max-height: 300px;
+  box-shadow: 0 0 2px 2px black;
+}
+
+.prevTasksList li:hover, .prevTasksListUp li:hover {
+  cursor: pointer;
+  box-shadow: 0 0 0 2px black;
+}
+
+.taskListHead {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0px 3px;
+}
+
+.context {
+  border: none;
+  cursor: pointer;
+  background-color: #EBECF0;
+}
+
+.listOfTasks, .prevTasksList ul, .prevTasksListUp ul {
+  list-style: none;
+  overflow-y: auto;
+  max-height: 100%;
+}
+
+.prevTasksList ul, .prevTasksListUp ul {
+  color: initial;
+  text-align: left;
+}
+
+.listOfTasks::-webkit-scrollbar, .prevTasksList::-webkit-scrollbar {
+  width: 12px;
+}
+
+.task {
+  background-color: white;
+  border-radius: 5px;
+  margin: 15px 3px;
+  padding: 7px;
+}
+
+.addCard {
+  color: #5E6C84;
+  cursor: pointer;
+  border: none;
+  margin: 0px 3px;
+  align-self: start;
+  position: relative;
+}
+
+.addCard:disabled {
+  cursor: not-allowed;
+  color: #dcdcdd;
+}
+
+.addCard span:first-child {
+  font-size: 24px;
+  margin-right: 4px;
+}
+
+.empty {
+  height: 200px;
+  width: 400px;
+  align-self: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.empty > div {
+  font-size: 28px;
+}
+
+.context-menu {
+  position: absolute;
+  left: 50px;
+  border: 1px black solid;
+  z-index: 1;
+}

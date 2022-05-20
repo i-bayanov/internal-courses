@@ -43,6 +43,12 @@
 
 Папка для задачи: **13-js-robots-and-cleaners**
 
+## Задача: Использование class синтаксиса для роботов и пылесосов
+
+Переписать предыдущую задачу "Роботы и пылесосы" на ES6+ с использованием class синтаксиса.
+
+Папка для задачи: **13-js-robots-and-cleaners**
+
 Материалы:  
 [Конструкторы, создание объектов через "new"](https://learn.javascript.ru/constructor-new)  
 [Прототипное наследование](https://learn.javascript.ru/prototype-inheritance)  

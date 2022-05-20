@@ -1,0 +1,8 @@
+/node_modules
+/**/*test.js
+/01-code-quality
+/02-unit-testing
+/03-webpack
+/04-typescript
+/**/docs
+/**/webpack.config.js

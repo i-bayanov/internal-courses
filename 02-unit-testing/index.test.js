@@ -1,4 +1,4 @@
-import { Calculator } from '../index.js';
+import { Calculator } from './index.js';
 
 const calcFloor = new Calculator(true);
 const calcCeil = new Calculator(false);

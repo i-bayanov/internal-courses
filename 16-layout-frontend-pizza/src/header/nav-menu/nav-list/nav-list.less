@@ -1,0 +1,26 @@
+.nav-list {
+  position: absolute;
+  transform: rotateX(90deg);
+  border: 2px solid black;
+  border-radius: 5px;
+  right: 0px;
+  background-color: white;
+
+  & hr {
+    border: 1px solid #C83737;
+
+    @media screen and (min-width: 960px)  {
+      display: none;
+    }
+  }
+
+  @media screen and (min-width: 960px)  {
+    display: flex;
+    justify-content: space-between;
+    position: initial;
+    transform: rotateX(0deg);
+    border: none;
+  }
+}
+
+@import './__item/nav-list__item.less';

@@ -1,0 +1,41 @@
+@font-face {
+  font-family: DejaVuSans;
+  src: url('DejaVuSans.ttf') format('truetype');
+}
+
+*, *:after, *:before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  transition: .5s ease-in-out;
+  font-family: DejaVuSans;
+  font-size: 16px;
+}
+
+.mixin-fade(@col:black, @op: 0.9) {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: @col;
+  opacity: @op;
+  z-index: 2;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  height: 100%;
+  margin: 0 5px;
+}
+
+@import './header/header.less';
+@import './main/main.less';
+@import './footer/footer.less';

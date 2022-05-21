@@ -1,0 +1,15 @@
+.logo {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  column-gap: 5px;
+  align-content: center;
+
+  &__img, &__name, &__tagline {
+    margin: auto 0;
+  }
+}
+
+@import './__img/logo__img.less';
+@import './__name/logo__name.less';
+@import './__tagline/logo__tagline.less';

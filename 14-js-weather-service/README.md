@@ -1,3 +1,10 @@
+- [Задачи на промисы, async/await и обработку ошибок](https://github.com/i-bayanov/internal-courses/tree/master/14-js-weather-service#%D0%B7%D0%B0%D0%B4%D0%B0%D1%87%D0%B8-%D0%BD%D0%B0-%D0%BF%D1%80%D0%BE%D0%BC%D0%B8%D1%81%D1%8B-asyncawait-%D0%B8-%D0%BE%D0%B1%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D1%83-%D0%BE%D1%88%D0%B8%D0%B1%D0%BE%D0%BA)
+  * [Задача: Сервис погоды на промисах](https://github.com/i-bayanov/internal-courses/tree/master/14-js-weather-service#%D0%B7%D0%B0%D0%B4%D0%B0%D1%87%D0%B0-%D1%81%D0%B5%D1%80%D0%B2%D0%B8%D1%81-%D0%BF%D0%BE%D0%B3%D0%BE%D0%B4%D1%8B)
+  * [Задача: Использование async/await в сервисе погоды](https://github.com/i-bayanov/internal-courses/tree/master/14-js-weather-service#%D0%B7%D0%B0%D0%B4%D0%B0%D1%87%D0%B0-%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-asyncawait-%D0%B2-%D1%81%D0%B5%D1%80%D0%B2%D0%B8%D1%81%D0%B5-%D0%BF%D0%BE%D0%B3%D0%BE%D0%B4%D1%8B)
+- [Задачи на ES6-модули](https://github.com/i-bayanov/internal-courses/tree/master/14-js-weather-service#%D0%B7%D0%B0%D0%B4%D0%B0%D1%87%D0%B8-%D0%BD%D0%B0-es6-%D0%BC%D0%BE%D0%B4%D1%83%D0%BB%D0%B8)
+  * [Задача: Использование модулей в сервисе погоды](https://github.com/i-bayanov/internal-courses/tree/master/14-js-weather-service#%D0%B7%D0%B0%D0%B4%D0%B0%D1%87%D0%B0-%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-%D0%BC%D0%BE%D0%B4%D1%83%D0%BB%D0%B5%D0%B9-%D0%B2-%D1%81%D0%B5%D1%80%D0%B2%D0%B8%D1%81%D0%B5-%D0%BF%D0%BE%D0%B3%D0%BE%D0%B4%D1%8B)
+  * [Задача: Написание тестов для сервиса погоды](https://github.com/i-bayanov/internal-courses/tree/master/14-js-weather-service#%D0%B7%D0%B0%D0%B4%D0%B0%D1%87%D0%B0-%D0%BD%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D0%BD%D0%B8%D0%B5-%D1%82%D0%B5%D1%81%D1%82%D0%BE%D0%B2-%D0%B4%D0%BB%D1%8F-%D1%81%D0%B5%D1%80%D0%B2%D0%B8%D1%81%D0%B0-%D0%BF%D0%BE%D0%B3%D0%BE%D0%B4%D1%8B)
+
 # Задачи на промисы, async/await и обработку ошибок
 ## Задача: Сервис погоды
 

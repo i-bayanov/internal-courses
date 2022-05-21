@@ -1,0 +1,31 @@
+.nav-menu {
+  position: relative;
+  order: 1;
+
+  @media screen and (min-width: 960px) {
+    order: initial;
+    flex-grow: 0.5;
+  }
+
+  & .checkbox {
+    display: none;
+  }
+
+  & .checkbox:checked ~ .nav-list {
+    transform: rotateX(0deg);
+    z-index: 3;
+  }
+
+  & .checkbox:checked ~ .burger-icon .closed {
+    transform: rotateX(90deg);
+  }
+
+  & .checkbox:checked ~ .burger-icon .open {
+    transform: rotateX(0deg);
+  }
+}
+
+@import './nav-list/nav-list.less';
+@import './burger-icon/burger-icon.less';
+@import './shopping-cart/shopping-cart.less';
+@import './cities/cities.less';

@@ -1,0 +1,25 @@
+.shopping-cart {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  height: 25px;
+  width: 82px;
+  flex-grow: 0.8;
+
+  & svg {
+    height: 24px;
+    width: 27px;
+    fill: #C83737;
+  }
+
+  & p {
+    width: 50px;
+    font-size: 10px;
+    color: #CCCCCC;
+    text-align: center;
+  }
+
+  @media screen and (min-width: 960px) {
+    display: none;
+  }
+}

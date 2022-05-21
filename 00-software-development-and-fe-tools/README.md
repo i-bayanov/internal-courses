@@ -1,12 +1,12 @@
 # Software development and FE tools
-  1. [Software development](https://github.com/i-bayanov/internal-courses/tree/master/00-software-development-and-fe-tools#software-development)  
-    - [Software Development Life Cycle](https://github.com/i-bayanov/internal-courses/tree/master/00-software-development-and-fe-tools#software-development-life-cycle)  
-    - [Software Development Methodologies](https://github.com/i-bayanov/internal-courses/tree/master/00-software-development-and-fe-tools#software-development-methodologies)  
-  2. [FE tools](https://github.com/i-bayanov/internal-courses/tree/master/00-software-development-and-fe-tools#fe-tools)  
-    - [IDE](https://github.com/i-bayanov/internal-courses/tree/master/00-software-development-and-fe-tools#ide)  
-    - [Git](https://github.com/i-bayanov/internal-courses/tree/master/00-software-development-and-fe-tools#git)  
-    - [NPM](https://github.com/i-bayanov/internal-courses/tree/master/00-software-development-and-fe-tools#npm)  
-    - [Инструменты разработчика](https://github.com/i-bayanov/internal-courses/tree/master/00-software-development-and-fe-tools#%D0%B8%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B-%D1%80%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%87%D0%B8%D0%BA%D0%B0-%D0%B2-%D0%B1%D1%80%D0%B0%D1%83%D0%B7%D0%B5%D1%80%D0%B5)
+  1. [Software development](#software-development)  
+    - [Software Development Life Cycle](#software-development-life-cycle)  
+    - [Software Development Methodologies](#software-development-methodologies)  
+  2. [FE tools](#fe-tools)  
+    - [IDE](#ide)  
+    - [Git](#git)  
+    - [NPM](#npm)  
+    - [Инструменты разработчика](#%D0%B8%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B-%D1%80%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%87%D0%B8%D0%BA%D0%B0-%D0%B2-%D0%B1%D1%80%D0%B0%D1%83%D0%B7%D0%B5%D1%80%D0%B5)
 
 ## Software development
 ### Software Development Life Cycle

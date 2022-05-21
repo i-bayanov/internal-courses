@@ -1,11 +1,24 @@
-# Объектно-ориентированное программирование и типизация
+1. [Programming paradigms](https://github.com/i-bayanov/internal-courses/tree/master/15-oop-network#programming-paradigms)
+    - [Объектно-ориентированное программирование и типизация](https://github.com/i-bayanov/internal-courses/tree/master/15-oop-network#%D0%BE%D0%B1%D1%8A%D0%B5%D0%BA%D1%82%D0%BD%D0%BE-%D0%BE%D1%80%D0%B8%D0%B5%D0%BD%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%BD%D0%BE%D0%B5-%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-%D0%B8-%D1%82%D0%B8%D0%BF%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F)
+      - [Задача: Локальная сеть](https://github.com/i-bayanov/internal-courses/tree/master/15-oop-network#%D0%B7%D0%B0%D0%B4%D0%B0%D1%87%D0%B0-%D0%BB%D0%BE%D0%BA%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F-%D1%81%D0%B5%D1%82%D1%8C)
+    - [Функциональное программирование](https://github.com/i-bayanov/internal-courses/tree/master/15-oop-network#%D1%84%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D0%BE%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B5-%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5)
+2. [Network communications](https://github.com/i-bayanov/internal-courses/tree/master/15-oop-network#network-communications)
+    - [HTTP](https://github.com/i-bayanov/internal-courses/tree/master/15-oop-network#%D0%BF%D1%80%D0%BE%D1%82%D0%BE%D0%BA%D0%BE%D0%BB-%D0%BF%D0%B5%D1%80%D0%B5%D0%B4%D0%B0%D1%87%D0%B8-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85-http)
+    - [AJAX](https://github.com/i-bayanov/internal-courses/tree/master/15-oop-network#%D1%81%D0%B5%D1%82%D0%B5%D0%B2%D1%8B%D0%B5-%D0%B7%D0%B0%D0%BF%D1%80%D0%BE%D1%81%D1%8B-%D0%B2-javascript)
+    - [WebSocket](https://github.com/i-bayanov/internal-courses/tree/master/15-oop-network#%D0%BF%D1%80%D0%BE%D1%82%D0%BE%D0%BA%D0%BE%D0%BB-%D0%BF%D0%B5%D1%80%D0%B5%D0%B4%D0%B0%D1%87%D0%B8-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85-websocket)
+    - [Server initiated requests](https://github.com/i-bayanov/internal-courses/tree/master/15-oop-network#%D0%B7%D0%B0%D0%BF%D1%80%D0%BE%D1%81%D1%8B-%D0%B8%D0%BD%D0%B8%D1%86%D0%B8%D0%B8%D1%80%D1%83%D0%B5%D0%BC%D1%8B%D0%B5-%D1%81%D0%B5%D1%80%D0%B2%D0%B5%D1%80%D0%BE%D0%BC)
+    - [Express.js](https://github.com/i-bayanov/internal-courses/tree/master/15-oop-network#%D1%81%D0%B5%D1%80%D0%B2%D0%B5%D1%80-%D0%BD%D0%B0-nodejs)
+      - [Задача: Сеть из раздела OOP на Node.js](https://github.com/i-bayanov/internal-courses/tree/master/15-oop-network#%D0%B7%D0%B0%D0%B4%D0%B0%D1%87%D0%B0-%D1%81%D0%B5%D1%82%D1%8C-%D0%B8%D0%B7-%D1%80%D0%B0%D0%B7%D0%B4%D0%B5%D0%BB%D0%B0-oop-%D0%BD%D0%B0-nodejs)
+
+# Programming paradigms
+## Объектно-ориентированное программирование и типизация
 
 1. Изучите основы ООП
 2. Изучите основы типизации на Typescript
 3. Реализуйте локальную сеть, используя принципы ООП и Typescript
 4. Напишите документацию для каждого класса
 
-## Задача: Локальная сеть
+### Задача: Локальная сеть
 
 Реализовать локальную сеть с пользователями и серверами. Для этого написать следующие классы с наследованием:
 - Network
@@ -94,8 +107,81 @@ class Test {
 [Typescript: Generics](https://www.typescriptlang.org/docs/handbook/2/generics.html)  
 [Typescript: Decorators](https://www.typescriptlang.org/docs/handbook/decorators.html)
 
-# Функциональное программирование
+## Функциональное программирование
 
 Материалы:  
 [Функциональное программирование в JavaScript с практическими примерами](https://habr.com/ru/company/vk/blog/327522/)  
 [Функторы, аппликативные функторы и монады в картинках](https://habr.com/ru/post/183150/)
+
+# Network communications
+## Протокол передачи данных HTTP
+
+1. Изучить теорию по компьютерным сетям
+2. Изучить архитектурный подход REST
+3. Изучить теорию по HTTP
+
+Материалы:  
+[Основы компьютерных сетей. Основные сетевые термины и сетевые модели](https://habr.com/ru/post/307252/)  
+[Как работают сети (видео)](https://www.youtube.com/watch?v=k_0BAtyaDio)  
+[REST (wikipedia)](https://ru.wikipedia.org/wiki/REST)  
+[Обзор протокола HTTP](https://developer.mozilla.org/ru/docs/Web/HTTP/Overview)  
+[Методы HTTP запроса](https://developer.mozilla.org/ru/docs/Web/HTTP/Methods)  
+[Простым языком об HTTP](https://habr.com/ru/post/215117/)  
+[Зачем нужен HTTP/2 для сайтов](https://habr.com/ru/company/webo/blog/300794/)
+
+## Сетевые запросы в Javascript
+
+1. Изучите теорию по fetch
+2. Изучите теорию по XMLHttpRequest
+
+Материалы:  
+[Fetch](https://learn.javascript.ru/fetch)  
+[Введение в fetch](https://habr.com/ru/post/252941/)  
+[Fetch: ход загрузки](https://learn.javascript.ru/fetch-progress)  
+[Fetch API](https://learn.javascript.ru/fetch-api)  
+[Кроссдоменные запросы](https://learn.javascript.ru/fetch-crossorigin)  
+[Fetch: прерывание запроса](https://learn.javascript.ru/fetch-abort)  
+[XMLHttpRequest](https://learn.javascript.ru/xmlhttprequest)  
+[XMLHttpRequest - Поля объекта](https://developer.mozilla.org/ru/docs/Web/API/XMLHttpRequest)  
+[Объект XMLHttpRequest](https://metanit.com/web/javascript/13.1.php)  
+[Возобновляемая загрузка файлов](https://learn.javascript.ru/resume-upload)
+
+## Протокол передачи данных WebSocket
+
+Изучите теорию по протоколу WebSocket
+
+Материалы:  
+[WebSocket](https://learn.javascript.ru/websocket)  
+[Разница между WebSocket, Socket, Http](https://russianblogs.com/article/3438220188/#WebSocketSocket_33)
+
+## Запросы, инициируемые сервером
+
+1. Изучите теорию по Длинным опросам (Long Pooling)
+2. Изучите теорию по SSE (Server Sent Events)
+
+Материалы:  
+[Длинные опросы](https://learn.javascript.ru/long-polling)  
+[Server Sent Events](https://learn.javascript.ru/server-sent-events)
+
+## Сервер на Node.js
+
+1. Изучите возможности пакета Express.js
+2. Реализуйте сеть для серверов и пользователей, используя Node.js, Express.js и WebSocket
+
+### Задача: Сеть из раздела OOP на Node.js
+
+Переработать сеть из раздела OOP, чтобы Оператор и Абоненты обменивались данными по HTTP и WebSocket:
+
+- Оператор должен работать в собственной Node.js среде
+- Абонент в качестве пользователя сервера сети должен использовать браузер
+- Абонент в качестве сервера должен работать в собственной Node.js среде
+- Реализовать простой UI-интерфейс для работы пользователя с сервером через браузер, в том числе чат
+- Обмен сообщений в чате должен быть реализован на WebSocket, остальные операции на HTTP
+- В реализации использовать: HTML, CSS, Typescript, Node.js, Express.js, WebSocket
+
+Папка для задачи: **15-oop-network**
+
+Материалы:  
+[Express, минималистичный веб-фреймворк для приложений Node.js](https://expressjs.com/ru/)  
+[Простой WebSocket-сервер на Node.JS](https://habr.com/ru/post/546758/)  
+[Как использовать Websocket на примере простого Express API](https://habr.com/ru/post/516334/)

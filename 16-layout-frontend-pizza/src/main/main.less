@@ -9,11 +9,13 @@
   background-image: url('./background-patt.png');
   background-position: center center;
 
-  &::after {
+  &::before {
     .mixin-fade(#3b3b3b);
   }
 
-  @media screen and (min-width: 960px)  {
+  @media screen and (min-width: 960px) {
     min-height: calc(100vh - 444px);
   }
 }
+
+@import './slider/slider.less';

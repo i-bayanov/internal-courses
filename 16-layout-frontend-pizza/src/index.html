@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <title>Frontend Pizza</title>
 </head>
 
@@ -119,7 +120,68 @@
     </div>
   </header>
   <main class="main">
-    <div class="container"></div>
+    <div class="container">
+      <section class="slider" id="slider">
+        <div class="wrapper">
+          <input checked type=radio name="slider" id="slide-1">
+          <input type=radio name="slider" id="slide-2">
+          <input type=radio name="slider" id="slide-3">
+          <div class="slider-wrapper">
+            <div class="inner">
+              <figure>
+                <figcaption>
+                  <div class="description">
+                    <p class="description__hashtag">#пицца</p>
+                    <h3 class="description__name">Итальянский Каскад</h3>
+                    <p class="description__addition">// с помидорами, лососем и зеленью</p>
+                    <button class="description__button">ЗАКАЗАТЬ</button>
+                  </div>
+                </figcaption>
+                <img src="./main/slider/slides/slide-1.jpg" />
+              </figure>
+              <figure>
+                <figcaption>
+                  <div class="description">
+                    <p class="description__hashtag">#ингредиенты</p>
+                    <h3 class="description__name">Свежие версии</h3>
+                    <p class="description__addition">// тесто, сыр, мясо, овощи</p>
+                    <button class="description__button">ПОДРОБНЕЕ</button>
+                  </div>
+                </figcaption>
+                <img src="./main/slider/slides/slide-2.jpg" />
+              </figure>
+              <figure>
+                <figcaption>
+                  <div class="description">
+                    <p class="description__hashtag">#непрерывная</p>
+                    <h3 class="description__name">Интеграция и доставка</h3>
+                    <p class="description__addition">// фокус на заказчика</p>
+                    <button class="description__button">ДЕТАЛИ</button>
+                  </div>
+                </figcaption>
+                <img src=" ./main/slider/slides/slide-3.jpg" />
+              </figure>
+            </div>
+          </div>
+          <div class="slider-prev-next-control">
+            <label for=slide-1>
+              <div class="triangle"></div>
+            </label>
+            <label for=slide-2>
+              <div class="triangle"></div>
+            </label>
+            <label for=slide-3>
+              <div class="triangle"></div>
+            </label>
+          </div>
+          <div class="slider-dot-control">
+            <label for=slide-1></label>
+            <label for=slide-2></label>
+            <label for=slide-3></label>
+          </div>
+        </div>
+      </section>
+    </div>
   </main>
   <footer class="footer">
     <hr>

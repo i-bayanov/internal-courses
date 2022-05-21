@@ -1,0 +1,178 @@
+.slider .wrapper {
+  position: relative;
+  margin-bottom: 20px;
+  padding: 0 15px;
+
+  input {
+    display: none;
+  }
+
+  .slider-wrapper {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .inner {
+    width: 300%;
+  }
+
+  figure {
+    width: 33.33%;
+    float: left;
+    position: relative;
+
+    img {
+      display: block;
+      width: 100%;
+      object-fit: contain;
+    }
+  }
+
+  figcaption {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+  }
+
+  figcaption::before {
+    .mixin-fade(black);
+  }
+
+  @media screen and (min-width: 768px) {
+    .slider-prev-next-control {
+      height: 70px;
+      position: absolute;
+      top: 50%;
+      left: 0px;
+      width: 100%;
+      transform: translateY(-50%);
+
+      label {
+        cursor: pointer;
+        display: none;
+        width: 70px;
+        height: 70px;
+        background: #fff;
+        opacity: .9;
+      }
+
+      label:hover {
+        opacity: 1;
+      }
+    }
+
+    #slide-1:checked~.slider-prev-next-control label:nth-child(2)::after,
+    #slide-1:checked~.slider-prev-next-control label:nth-child(3)::after,
+    #slide-2:checked~.slider-prev-next-control label:nth-child(1)::after,
+    #slide-2:checked~.slider-prev-next-control label:nth-child(3)::after,
+    #slide-3:checked~.slider-prev-next-control label:nth-child(1)::after,
+    #slide-3:checked~.slider-prev-next-control label:nth-child(2)::after {
+      font-family: FontAwesome;
+      font-style: normal;
+      font-weight: 400;
+      text-decoration: inherit;
+      margin: 0;
+      line-height: 38px;
+      font-size: 3em;
+      display: block;
+      color: #777;
+      transition: none;
+    }
+
+    #slide-1:checked~.slider-prev-next-control label:nth-child(2)::after,
+    #slide-2:checked~.slider-prev-next-control label:nth-child(3)::after,
+    #slide-3:checked~.slider-prev-next-control label:nth-child(1)::after {
+      content: "\f105";
+    }
+
+    #slide-1:checked~.slider-prev-next-control label:nth-child(2),
+    #slide-2:checked~.slider-prev-next-control label:nth-child(3),
+    #slide-3:checked~.slider-prev-next-control label:nth-child(1) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      float: right;
+      transition: none;
+
+      .triangle {
+        position: absolute;
+        bottom: -15px;
+        right: 0px;
+        height: 15px;
+        width: 15px;
+        border: 7.5px solid transparent;
+        border-left: 7.5px solid #696969;
+        border-top: 7.5px solid #696969;
+        transition: none;
+      }
+    }
+
+    #slide-1:checked~.slider-prev-next-control label:nth-child(3),
+    #slide-2:checked~.slider-prev-next-control label:nth-child(1),
+    #slide-3:checked~.slider-prev-next-control label:nth-child(2) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      float: left;
+      transition: none;
+
+      .triangle {
+        position: absolute;
+        bottom: -15px;
+        left: 0px;
+        height: 15px;
+        width: 15px;
+        border: 7.5px solid transparent;
+        border-right: 7.5px solid #696969;
+        border-top: 7.5px solid #696969;
+        transition: none;
+      }
+    }
+
+    #slide-1:checked~.slider-prev-next-control label:nth-child(3)::after,
+    #slide-2:checked~.slider-prev-next-control label:nth-child(1)::after,
+    #slide-3:checked~.slider-prev-next-control label:nth-child(2)::after {
+      content: "\f104";
+    }
+  }
+
+  .slider-dot-control {
+    position: absolute;
+    width: calc(100% - 30px);
+    bottom: -20px;
+    text-align: center;
+
+    label {
+      cursor: pointer;
+      display: inline-block;
+      width: calc(33% - 16px);
+      height: 10px;
+      margin: 0 7px;
+      background: #636363;
+    }
+
+    label:hover {
+      background: #FFD906;
+    }
+  }
+
+  #slide-1:checked~.slider-dot-control label:nth-child(1),
+  #slide-2:checked~.slider-dot-control label:nth-child(2),
+  #slide-3:checked~.slider-dot-control label:nth-child(3) {
+    background: #FFD906;
+  }
+
+  #slide-1:checked~.slider-wrapper .inner {
+    margin-left: 0;
+  }
+
+  #slide-2:checked~.slider-wrapper .inner {
+    margin-left: -100%;
+  }
+
+  #slide-3:checked~.slider-wrapper .inner {
+    margin-left: -200%;
+  }
+}
+
+@import './description/description.less';

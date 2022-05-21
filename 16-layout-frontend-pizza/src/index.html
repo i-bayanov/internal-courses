@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <title>Frontend Pizza</title>
 </head>
 
@@ -164,21 +165,177 @@
             </div>
           </div>
           <div class="slider-prev-next-control">
-            <label for=slide-1>
+            <label for="slide-1">
               <div class="triangle"></div>
             </label>
-            <label for=slide-2>
+            <label for="slide-2">
               <div class="triangle"></div>
             </label>
-            <label for=slide-3>
+            <label for="slide-3">
               <div class="triangle"></div>
             </label>
           </div>
           <div class="slider-dot-control">
-            <label for=slide-1></label>
-            <label for=slide-2></label>
-            <label for=slide-3></label>
+            <label for="slide-1"></label>
+            <label for="slide-2"></label>
+            <label for="slide-3"></label>
           </div>
+        </div>
+      </section>
+      <section class="menu">
+        <h2 class="menu-header">Меню</h2>
+        <div class="menu-filter-search">
+          <div class="menu-filter-search__filter">
+            <input type="checkbox" name="filter" id="novelty">
+            <label for="novelty">Новинка</label>
+            <input type="checkbox" name="filter" id="vegetarian">
+            <label for="vegetarian">Вегетарианская</label>
+            <input type="checkbox" name="filter" id="meat">
+            <label for="meat">Мясо</label>
+            <input type="checkbox" name="filter" id="chicken">
+            <label for="chicken">Курица</label>
+            <input type="checkbox" name="filter" id="fish">
+            <label for="fish">Рыба</label>
+            <input type="checkbox" name="filter" id="mushrooms">
+            <label for="mushrooms">Грибы</label>
+            <input type="checkbox" name="filter" id="spicy">
+            <label for="spicy">Острая</label>
+          </div>
+          <div class="menu-filter-search__search">
+            <input type="search" size="23" name="search" placeholder="Поиск...">
+            <div class="vertical-line"></div>
+            <div class="lens">
+              <span class="material-icons">search</span>
+            </div>
+          </div>
+        </div>
+        <div class="menu-list">
+          <div class="menu-items">
+            <div class="menu-item">
+              <img src="./main/menu/pizzas-img/pizza-1.png" alt="Итальянский каскад" class="menu-litem__img">
+              <h3 class="menu-item__name">Итальянский каскад</h3>
+              <ul class="menu-item__consist">
+                <li class="ingredient">Сыр</li>
+                <li class="ingredient">Кусочки лосося</li>
+                <li class="ingredient">Помидоры</li>
+                <li class="ingredient">Перец</li>
+                <li class="ingredient">Зелень</li>
+              </ul>
+              <div class="menu-item__size">
+                <input checked type="radio" name="size20" id="pizza1_20">
+                <label for="pizza1_20">20</label>
+                <input type="radio" name="size30" id="pizza1_30">
+                <label for="pizza1_30">30</label>
+                <input type="radio" name="size40" id="pizza1_40">
+                <label for="pizza1_40">40</label>
+              </div>
+              <div class="menu-item__price">470</div>
+              <button class="menu-item__order">В корзину</button>
+            </div>
+            <div class="menu-item">
+              <img src="./main/menu/pizzas-img/pizza-2.png" alt="Замыкание с колбасками" class="menu-litem__img">
+              <h3 class="menu-item__name">Замыкание с колбасками</h3>
+              <ul class="menu-item__consist">
+                <li class="ingredient">Сыр</li>
+                <li class="ingredient">Колбаски</li>
+                <li class="ingredient">Грибы</li>
+                <li class="ingredient">Помидоры</li>
+                <li class="ingredient">Маслины</li>
+              </ul>
+              <div class="menu-item__size">
+                <input checked type="radio" name="size20" id="pizza2_20">
+                <label for="pizza2_20">20</label>
+                <input type="radio" name="size30" id="pizza2_30">
+                <label for="pizza2_30">30</label>
+                <input type="radio" name="size40" id="pizza2_40">
+                <label for="pizza2_40">40</label>
+              </div>
+              <div class="menu-item__price">440</div>
+              <button class="menu-item__order">В корзину</button>
+            </div>
+            <div class="menu-item">
+              <img src="./main/menu/pizzas-img/pizza-3.png" alt="Объектная Мозаика" class="menu-litem__img">
+              <h3 class="menu-item__name">Объектная Мозаика</h3>
+              <ul class="menu-item__consist">
+                <li class="ingredient">Сыр 2 вида</li>
+                <li class="ingredient">Колбаски</li>
+                <li class="ingredient">Грибы</li>
+                <li class="ingredient">Помидоры</li>
+                <li class="ingredient">Перец</li>
+                <li class="ingredient">Зелень</li>
+              </ul>
+              <div class="menu-item__size">
+                <input checked type="radio" name="size20" id="pizza3_20">
+                <label for="pizza3_20">20</label>
+                <input type="radio" name="size30" id="pizza3_30">
+                <label for="pizza3_30">30</label>
+                <input type="radio" name="size40" id="pizza3_40">
+                <label for="pizza3_40">40</label>
+              </div>
+              <div class="menu-item__price">450</div>
+              <button class="menu-item__order">В корзину</button>
+            </div>
+            <div class="menu-item">
+              <img src="./main/menu/pizzas-img/pizza-4.png" alt="Сырный Компонент" class="menu-litem__img">
+              <h3 class="menu-item__name">Сырный Компонент</h3>
+              <ul class="menu-item__consist">
+                <li class="ingredient">Сыр 2 вида</li>
+                <li class="ingredient">Специи</li>
+              </ul>
+              <div class="menu-item__size">
+                <input checked type="radio" name="size20" id="pizza4_20">
+                <label for="pizza4_20">20</label>
+                <input type="radio" name="size30" id="pizza4_30">
+                <label for="pizza4_30">30</label>
+                <input type="radio" name="size40" id="pizza4_40">
+                <label for="pizza4_40">40</label>
+              </div>
+              <div class="menu-item__price">310</div>
+              <button class="menu-item__order">В корзину</button>
+            </div>
+            <div class="menu-item">
+              <img src="./main/menu/pizzas-img/pizza-5.png" alt="Летний Массив" class="menu-litem__img">
+              <h3 class="menu-item__name">Летний Массив</h3>
+              <ul class="menu-item__consist">
+                <li class="ingredient">Сыр</li>
+                <li class="ingredient">Грибы</li>
+                <li class="ingredient">Помидоры</li>
+                <li class="ingredient">Маслины</li>
+                <li class="ingredient">Зелень</li>
+              </ul>
+              <div class="menu-item__size">
+                <input checked type="radio" name="size20" id="pizza5_20">
+                <label for="pizza5_20">20</label>
+                <input type="radio" name="size30" id="pizza5_30">
+                <label for="pizza5_30">30</label>
+                <input type="radio" name="size40" id="pizza5_40">
+                <label for="pizza5_40">40</label>
+              </div>
+              <div class="menu-item__price">420</div>
+              <button class="menu-item__order">В корзину</button>
+            </div>
+            <div class="menu-item">
+              <img src="./main/menu/pizzas-img/pizza-6.png" alt="Прототип Вега" class="menu-litem__img">
+              <h3 class="menu-item__name">Прототип Вега</h3>
+              <ul class="menu-item__consist">
+                <li class="ingredient">Сливочный сыр</li>
+                <li class="ingredient">Помидоры</li>
+                <li class="ingredient">Зелень</li>
+                <li class="ingredient">Специи</li>
+              </ul>
+              <div class="menu-item__size">
+                <input checked type="radio" name="size20" id="pizza6_20">
+                <label for="pizza6_20">20</label>
+                <input type="radio" name="size30" id="pizza6_30">
+                <label for="pizza6_30">30</label>
+                <input type="radio" name="size40" id="pizza6_40">
+                <label for="pizza6_40">40</label>
+              </div>
+              <div class="menu-item__price">380</div>
+              <button class="menu-item__order">В корзину</button>
+            </div>
+          </div>
+          <div class="menu-shopping-cart"></div>
         </div>
       </section>
     </div>

@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`List item component should renders correctly 1`] = `
+<div>
+  <li
+    class="completed "
+    data-id="1651234007958"
+  >
+    <div
+      class="view"
+    >
+      <input
+        checked=""
+        class="toggle"
+        type="checkbox"
+      />
+      <label>
+        Write a to-do list
+      </label>
+      <button
+        class="destroy"
+      />
+    </div>
+  </li>
+</div>
+`;

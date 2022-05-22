@@ -1,15 +1,16 @@
-import React, { PointerEvent, PointerEventHandler } from 'react';
+import React, { PointerEvent, PointerEventHandler, useContext } from 'react';
+import StateContext from '../state-context';
 
-export default function Footer(props: {
-  todoCount: number,
-  filter: number,
-  filterTodos: Function,
-  clearComplited: Function,
-}) {
+export default function Footer() {
+  const {
+    todos, filter, filterTodos, clearComplited,
+  } = useContext(StateContext);
+  const todoCount = todos.filter((todo) => !todo.completed).length;
+
   const chooseFilter = (e: PointerEvent) => {
     const { hash } = e.target as HTMLAnchorElement;
     if (window.location.hash === hash) return;
-    props.filterTodos(hash);
+    filterTodos(hash);
   };
 
   const Anchor = (anchorProps: { href: string, text: string, className?: 'selected' }) => (
@@ -22,7 +23,9 @@ export default function Footer(props: {
 
   return (
     <footer className='footer'>
-      <span className='todo-count'>{props.todoCount} item{props.todoCount === 1 ? '' : 's'} left</span>
+      <span className='todo-count'>
+        {todoCount} item{todoCount === 1 ? '' : 's'} left
+      </span>
       <ul className='filters'>
         {(() => {
           const anchorAttrs = [
@@ -32,10 +35,18 @@ export default function Footer(props: {
           ];
           const itemsArr = [];
           for (let i = 0; i < anchorAttrs.length; i++) {
-            if (i === props.filter) {
-              itemsArr.push(<li key={i}><Anchor {...anchorAttrs[i]} className='selected' /></li>);
+            if (i === filter) {
+              itemsArr.push(
+                <li key={i}>
+                  <Anchor {...anchorAttrs[i]} className='selected' />
+                </li>,
+              );
             } else {
-              itemsArr.push(<li key={i}><Anchor {...anchorAttrs[i]} /></li>);
+              itemsArr.push(
+                <li key={i}>
+                  <Anchor {...anchorAttrs[i]} />
+                </li>,
+              );
             }
           }
           return itemsArr;
@@ -44,7 +55,7 @@ export default function Footer(props: {
       <button
         className='clear-completed'
         style={{ display: 'block' }}
-        onPointerDown={props.clearComplited as PointerEventHandler}
+        onPointerDown={clearComplited as PointerEventHandler}
       >Clear completed</button>
     </footer>
   );

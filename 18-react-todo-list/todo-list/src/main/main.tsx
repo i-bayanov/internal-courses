@@ -3,8 +3,8 @@ import ListItem from './list-item';
 import Footer from './footer';
 import StateContext from '../state-context';
 
-export default function Main() {
-  const { todos, filter, toggleAll } = useContext(StateContext);
+export default function Main({ filter }: {filter: number}) {
+  const { todos, toggleAll } = useContext(StateContext);
   const filteredTodos = todos.filter((todo) => ([true, !todo.completed, todo.completed][filter]));
 
   return (

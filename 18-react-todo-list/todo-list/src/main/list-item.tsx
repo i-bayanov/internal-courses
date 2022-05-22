@@ -3,7 +3,7 @@ import { ITodoItem } from '../interfaces-and-types';
 import StateContext from '../state-context';
 
 export default function ListItem(props: ITodoItem) {
-  const [isEdited, setIsEdited]: [boolean, Function] = useState(false);
+  const [isEdited, setIsEdited] = useState<boolean>(false);
 
   const { edit, toggle, deleteTodo } = useContext(StateContext);
 

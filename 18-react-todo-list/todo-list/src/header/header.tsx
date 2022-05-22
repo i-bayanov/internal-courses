@@ -4,7 +4,7 @@ import React, {
 import StateContext from '../state-context';
 
 export default function Header() {
-  const [newTodo, setNewTodo]: [string, Function] = useState('');
+  const [newTodo, setNewTodo] = useState<string>('');
 
   const { addTodo } = useContext(StateContext);
 

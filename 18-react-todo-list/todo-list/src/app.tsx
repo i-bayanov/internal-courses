@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Route, Routes } from 'react-router-dom';
 import { ITodoItem } from './interfaces-and-types';
 import StateContext from './state-context';
 import Header from './header/header';
@@ -8,10 +9,6 @@ export default function App() {
   const [todos, setTodos] = useState<ITodoItem[] | []>(
     JSON.parse(localStorage.getItem('todos') as string) || [],
   );
-
-  const [filter, setFilter]: [number, Function] = useState({
-    '': 0, '#/': 0, '#/active': 1, '#/completed': 2,
-  }[window.location.hash] || 0);
 
   const identifyTodoAndMakeNewTodos = (id: string, oldTodos: Array<ITodoItem>) => {
     const index = oldTodos.findIndex((todo) => todo.id === id);
@@ -55,11 +52,6 @@ export default function App() {
     setTodos(newTodos);
   };
 
-  const filterTodos = (hash: string) => {
-    window.location.hash = hash;
-    setFilter({ '#/': 0, '#/active': 1, '#/completed': 2 }[hash] || 0);
-  };
-
   const clearComplited = () => {
     const newTodos = todos.filter((todo) => !todo.completed);
     localStorage.setItem('todos', JSON.stringify(newTodos));
@@ -68,13 +60,11 @@ export default function App() {
 
   const contextValue = {
     todos,
-    filter,
     addTodo,
     edit,
     toggle,
     toggleAll,
     deleteTodo,
-    filterTodos,
     clearComplited,
   };
 
@@ -82,7 +72,11 @@ export default function App() {
     <StateContext.Provider value={contextValue}>
       <section className="todoapp">
         <Header />
-        {!!todos.length && <Main />}
+        {!!todos.length && <Routes>
+          <Route path='/' element={<Main filter={0}/>}/>
+          <Route path='/active' element={<Main filter={1}/>}/>
+          <Route path='/completed' element={<Main filter={2}/>}/>
+        </Routes>}
       </section>
     </StateContext.Provider>
   );

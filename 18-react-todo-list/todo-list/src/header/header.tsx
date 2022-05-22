@@ -1,12 +1,10 @@
 import React, {
-  KeyboardEvent, useContext, useEffect, useState,
+  KeyboardEvent, useEffect, useState,
 } from 'react';
-import StateContext from '../state-context';
+import { dispatchAndSave } from '../store';
 
 export default function Header() {
   const [newTodo, setNewTodo] = useState<string>('');
-
-  const { addTodo } = useContext(StateContext);
 
   useEffect(() => {
     const { title } = document;
@@ -36,10 +34,15 @@ export default function Header() {
     if (e.key === 'Enter') {
       const input = e.target as HTMLInputElement;
       setNewTodo(input.value);
-      addTodo({
-        id: Date.now().toString(),
-        title: input.value,
-        completed: false,
+      dispatchAndSave({
+        type: 'todo/add',
+        payload: {
+          todo: {
+            id: Date.now().toString(),
+            title: input.value,
+            completed: false,
+          },
+        },
       });
       input.value = '';
     }

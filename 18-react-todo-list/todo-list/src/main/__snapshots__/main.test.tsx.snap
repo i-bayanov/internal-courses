@@ -1,0 +1,149 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Main component should renders correctly 1`] = `
+<div>
+  <section
+    class="main"
+  >
+    <input
+      class="toggle-all"
+      id="toggle-all"
+      type="checkbox"
+    />
+    <label
+      for="toggle-all"
+    >
+      Mark all as completed
+    </label>
+    <ul
+      class="todo-list"
+    >
+      <li
+        class="completed "
+        data-id="1651234007958"
+      >
+        <div
+          class="view"
+        >
+          <input
+            checked=""
+            class="toggle"
+            type="checkbox"
+          />
+          <label>
+            Write a to-do list
+          </label>
+          <button
+            class="destroy"
+          />
+        </div>
+      </li>
+      <li
+        class="completed "
+        data-id="1651234009086"
+      >
+        <div
+          class="view"
+        >
+          <input
+            checked=""
+            class="toggle"
+            type="checkbox"
+          />
+          <label>
+            Mark the first item as completed
+          </label>
+          <button
+            class="destroy"
+          />
+        </div>
+      </li>
+      <li
+        class=" "
+        data-id="1651234010110"
+      >
+        <div
+          class="view"
+        >
+          <input
+            class="toggle"
+            type="checkbox"
+          />
+          <label>
+            -
+          </label>
+          <button
+            class="destroy"
+          />
+        </div>
+      </li>
+      <li
+        class=" "
+        data-id="1651234864772"
+      >
+        <div
+          class="view"
+        >
+          <input
+            class="toggle"
+            type="checkbox"
+          />
+          <label>
+            Come up with an interesting third point
+          </label>
+          <button
+            class="destroy"
+          />
+        </div>
+      </li>
+    </ul>
+    <footer
+      class="footer"
+    >
+      <span
+        class="todo-count"
+      >
+        2
+         item
+        s
+         left
+      </span>
+      <ul
+        class="filters"
+      >
+        <li>
+          <a
+            aria-current="page"
+            class="selected"
+            href="/"
+          >
+            All
+          </a>
+        </li>
+        <li>
+          <a
+            class=""
+            href="/active"
+          >
+            Active
+          </a>
+        </li>
+        <li>
+          <a
+            class=""
+            href="/completed"
+          >
+            Completed
+          </a>
+        </li>
+      </ul>
+      <button
+        class="clear-completed"
+        style="display: block;"
+      >
+        Clear completed
+      </button>
+    </footer>
+  </section>
+</div>
+`;

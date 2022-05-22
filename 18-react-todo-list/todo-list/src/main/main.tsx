@@ -1,34 +1,29 @@
-import React from 'react';
-import { IMainProps } from '../interfaces-and-types';
+import React, { useContext } from 'react';
 import ListItem from './list-item';
 import Footer from './footer';
+import StateContext from '../state-context';
 
-export default function Main(props: IMainProps) {
+export default function Main() {
+  const { todos, filter, toggleAll } = useContext(StateContext);
+  const filteredTodos = todos.filter((todo) => ([true, !todo.completed, todo.completed][filter]));
+
   return (
     <section className="main">
       <input
         id="toggle-all"
         className="toggle-all"
         type="checkbox"
-        onChange={(e) => props.toggleAll(e.target.checked)}
-        checked={props.todos.every((todo) => todo.completed)}
+        onChange={(e) => toggleAll(e.target.checked)}
+        checked={filteredTodos.every((todo) => todo.completed)}
       />
       <label htmlFor="toggle-all">Mark all as completed</label>
       <ul className='todo-list'>
-        {props.todos.map((todo) => <ListItem
+        {filteredTodos.map((todo) => <ListItem
           key={todo.id}
           {...todo}
-          edit={props.edit}
-          toggle={props.toggle}
-          delete={props.delete}
         />)}
       </ul>
-      <Footer
-        todoCount={props.todos.filter((todo) => !todo.completed).length}
-        filter={props.filter}
-        filterTodos={props.filterTodos}
-        clearComplited={props.clearComplited}
-      />
+      <Footer />
     </section>
   );
 }

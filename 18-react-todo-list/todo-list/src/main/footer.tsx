@@ -1,9 +1,10 @@
-import React, { PointerEventHandler, useContext } from 'react';
+import React, { PointerEventHandler } from 'react';
+import { useSelector } from 'react-redux';
 import { NavLink } from 'react-router-dom';
-import StateContext from '../state-context';
+import { dispatchAndSave, RootState } from '../store';
 
 export default function Footer() {
-  const { todos, clearComplited } = useContext(StateContext);
+  const todos = useSelector((state: RootState) => state);
   const todoCount = todos.filter((todo) => !todo.completed).length;
 
   return (
@@ -34,7 +35,9 @@ export default function Footer() {
       <button
         className='clear-completed'
         style={{ display: 'block' }}
-        onPointerDown={clearComplited as PointerEventHandler}
+        onPointerDown={(() => dispatchAndSave({
+          type: 'clearCompleted',
+        })) as PointerEventHandler}
       >Clear completed</button>
     </footer>
   );

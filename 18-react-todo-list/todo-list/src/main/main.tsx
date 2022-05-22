@@ -1,10 +1,11 @@
-import React, { useContext } from 'react';
+import React from 'react';
+import { useSelector } from 'react-redux';
 import ListItem from './list-item';
 import Footer from './footer';
-import StateContext from '../state-context';
+import { dispatchAndSave, RootState } from '../store';
 
 export default function Main({ filter }: {filter: number}) {
-  const { todos, toggleAll } = useContext(StateContext);
+  const todos = useSelector((state: RootState) => state);
   const filteredTodos = todos.filter((todo) => ([true, !todo.completed, todo.completed][filter]));
 
   return (
@@ -13,7 +14,12 @@ export default function Main({ filter }: {filter: number}) {
         id="toggle-all"
         className="toggle-all"
         type="checkbox"
-        onChange={(e) => toggleAll(e.target.checked)}
+        onChange={(e) => dispatchAndSave({
+          type: 'toggleAll',
+          payload: {
+            toggler: e.target.checked,
+          },
+        })}
         checked={filteredTodos.every((todo) => todo.completed)}
       />
       <label htmlFor="toggle-all">Mark all as completed</label>

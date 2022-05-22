@@ -1,11 +1,9 @@
-import React, { KeyboardEvent, useContext, useState } from 'react';
+import React, { KeyboardEvent, useState } from 'react';
 import { ITodoItem } from '../interfaces-and-types';
-import StateContext from '../state-context';
+import { dispatchAndSave } from '../store';
 
 export default function ListItem(props: ITodoItem) {
   const [isEdited, setIsEdited] = useState<boolean>(false);
-
-  const { edit, toggle, deleteTodo } = useContext(StateContext);
 
   const handleIfEnterPressed = (e: KeyboardEvent) => {
     if (e.key === 'Enter') (e.target as HTMLInputElement).blur();
@@ -18,7 +16,15 @@ export default function ListItem(props: ITodoItem) {
       autoFocus
       onBlur={(e) => {
         const input = e.target;
-        if (input.value !== props.title) edit(props.id, input.value);
+        if (input.value !== props.title) {
+          dispatchAndSave({
+            type: 'todo/edit',
+            payload: {
+              id: props.id,
+              value: input.value,
+            },
+          });
+        }
         setIsEdited(false);
       }}
       onKeyDown={handleIfEnterPressed}
@@ -40,13 +46,23 @@ export default function ListItem(props: ITodoItem) {
         <input
           className='toggle'
           type='checkbox'
-          onChange={(e) => toggle(props.id, e.target.checked)}
+          onChange={(e) => dispatchAndSave({
+            type: 'todo/toggle',
+            payload: {
+              id: props.id,
+            },
+          })}
           checked={props.completed}
         />
         <label>{props.title}</label>
         <button
           className='destroy'
-          onPointerDown={() => deleteTodo(props.id)}
+          onPointerDown={() => dispatchAndSave({
+            type: 'todo/delete',
+            payload: {
+              id: props.id,
+            },
+          })}
         ></button>
       </div>
       {isEdited && <EditTodo />}
